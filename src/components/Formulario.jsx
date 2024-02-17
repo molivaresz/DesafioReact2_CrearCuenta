@@ -1,21 +1,43 @@
-import Card from 'react-bootstrap/Card';
-import MyTags from './Tags'
-
 const Formulario = (props) => {
     return (
         <>
-        <Card style={{ width: '18rem' }}>
-            <Card.Img className='imgdog' variant="top" src={props.dirimgdog} />
-            <Card.Body className='cardbody'>
-                <Card.Title>{props.namedog}</Card.Title>
-                <Card.Text>{props.descriptiondog}</Card.Text>
-            </Card.Body>
-            <MyTags 
-            dogbreed={props.dogbreed}
-            badgecolor={props.badgecolor}
-            />
-        </Card>
+        <form className="formulario">
+            <div className="form-group">
+                <input
+                type="text"
+                name="nombre"
+                placeholder="Nombre"
+                className="form-control"
+                />
+            </div>
+            <div className="form-group">
+                <input
+                type="text"
+                name="email"
+                placeholder="tuemail@ejemplo.com"
+                className="form-control"
+                />
+            </div>
+            <div className="form-group">
+                <input
+                type="password"
+                name="Contrasena1"
+                placeholder="Contraseña"
+                className="form-control"
+                />
+            </div>
+            <div className="form-group">
+                <input
+                type="password"
+                name="Contrasena2"
+                placeholder="Confirma tu contraseña"
+                className="form-control"
+                />
+            </div>
+            <button type="submit" className="btn btn-success">Enviar</button>
+        </form>
         </>
+
     )
 }
 
