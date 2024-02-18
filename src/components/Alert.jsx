@@ -1,12 +1,13 @@
-import Card from 'react-bootstrap/Card';
-import MyTags from './Tags'
+import Alert from 'react-bootstrap/Alert';
 
-const Alert = (props) => {
+const Alerta = (props) => {
     return (
         <>
-    
+        <Alert key={props.coloralerta} variant={props.coloralerta}>
+            {props.msgalerta}
+        </Alert>
         </>
     )
 }
 
-    export default Alert
+    export default Alerta

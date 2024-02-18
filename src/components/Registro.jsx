@@ -1,12 +1,11 @@
-import SocialButton1 from './SocialButton'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { useState } from 'react'
+import SocialButton1 from './SocialButton'
 import Formulario from './Formulario';
 
+
 const Registro = (props) => {
-    const [count, setCount] = useState(0)
 
     return (
         <>
@@ -27,12 +26,12 @@ const Registro = (props) => {
                     </Row>
                     <Row>
                         <Col className='text-center p-2'>
-                            <Formulario />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col className='text-center p-2'>
-                            <p>alert</p>
+                            <Formulario 
+                            msgexito={props.msgexito}
+                            msgerror1={props.msgerror1}
+                            msgerror2={props.msgerror2}
+                            msgerror3={props.msgerror3}
+                            />
                         </Col>
                     </Row>
                 </Container>
