@@ -10,8 +10,8 @@ const Formulario = (props) => {
     const [email, setEmail] = useState('');
     const [contrasena1, setContrasena1] = useState('');
     const [contrasena2, setContrasena2] = useState('');
-    const [error, setError] = useState(props.msgerror1)
-    const [colorerror, setColorError] = useState('danger')
+    const [error, setError] = useState(props.msgIni)
+    const [colorerror, setColorError] = useState('info')
 
     const validarCampos = (e) => {
         e.preventDefault()

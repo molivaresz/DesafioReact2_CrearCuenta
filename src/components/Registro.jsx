@@ -29,6 +29,7 @@ const Registro = (props) => {
                     <Row>
                         <Col className='text-center p-2'>
                             <Formulario 
+                            msgIni={props.msgIni}
                             msgexito={props.msgexito}
                             msgerror1={props.msgerror1}
                             msgerror2={props.msgerror2}
